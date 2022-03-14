@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+
+
 /**
 
- * Description: main - prints out a string to stdout.
+ * main - prints the phrase "Programming is like building a multilingual puzzle
 
- * Return: 0 if success.
+ * Return: 0 if exited properly, non-zero otherwise
 
  */
 
