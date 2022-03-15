@@ -10,44 +10,38 @@ int main(void)
 
 {
 
-	int n, m;
+    
 
-
-
-	for (n = 48; n <= 56; n++)
+	for (int i = 0; i <= 9; i++)
 
 	{
 
-		for (m = 49; m <= 57; m++)
+	    for (int j = i + 1; j <= 9; j++)
 
-		{
+	    {
 
-			if (m > n)
+	        putchar(i + '0');
 
-			{
+	        putchar(j + '0');
 
-				putchar(n);
+	        if (((i * 10) + j) < 89)
 
-				putchar(m);
+	        {
 
-				if (n != 56 || m != 57)
+	            putchar(',');
 
-				{
+                putchar(' ');
 
-					putchar(',');
 
-					putchar(' ');
 
-				}
+	        }
 
-			}
-
-		}
+	    }
 
 	}
 
 	putchar('\n');
 
-	return (0);
+    return 0;
 
 }
