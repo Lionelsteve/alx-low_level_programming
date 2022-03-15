@@ -1,23 +1,16 @@
 #include <stdlib.h>
 
-#include <stdio.h>
-
 #include <time.h>
 
-/* more headers goes there */
+#include <stdio.h>
 
 
 
 /**
-
-* main - entry point
-
-*
-
-* Return: 0 if success
-
+* main - assigns a random number to int n everytime
+* it executes, and prints it
+* Return: Always 0 (Success)
 */
-
 int main(void)
 
 {
@@ -30,8 +23,6 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 
-	/* your code goes there */
-
 	if (n > 0)
 
 		printf("%d is positive\n", n);
@@ -40,7 +31,7 @@ int main(void)
 
 		printf("%d is zero\n", n);
 
-	else
+	else if (n < 0)
 
 		printf("%d is negative\n", n);
 
