@@ -12,17 +12,17 @@ int main(void)
 	int i, j, k;
 	
 	i = 0;
-	while(i < 100)
+	while (i < 100)
 	{
 		j = i % 10; /*single digits*/
 		k = j / 10; /*double digits*/
 
-		if(k < j)
+		if (k < j)
 		{
 			putchar(k + '0');
 			putchar(j + '0');
 
-			if(i < 89)
+			if (i < 89)
 			{
 				putchar(44);
 				putchar(32);
@@ -33,6 +33,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return 0;
-
+	return (0);
 }
