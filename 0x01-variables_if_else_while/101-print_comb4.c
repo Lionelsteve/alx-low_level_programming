@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main prints all possible different combinaitions pf three digits
+ * main - prints all possible different combinaitions pf three digits
  * Return: Always 0 (success)
  */
 int main(void)
@@ -19,7 +19,7 @@ int main(void)
 					putchar(i);
 					putchar(j);
 					putchar(k);
-					if (i != 56 || j != 57)
+					if (i != 55 || j != 56)
 					{
 						putchar(44);
 						putchar(32);
