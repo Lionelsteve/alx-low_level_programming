@@ -9,37 +9,30 @@
 int main(void)
 
 {
-  int n, m;
-    for (n = 48; n <= 56; n++)
-       {
-            for (m = 49; m <= 57; m++)
-                              {
-                                                  if (m > n)
+	int i, j, k;
+	
+	i = 0;
+	while(i < 100)
+	{
+		j = i % 10; /*single digits*/
+		k = j / 10; /*double digits*/
 
+		if(k < j)
+		{
+			putchar(k + '0');
+			putchar(j + '0');
+
+			if(i < 89)
 			{
-
-				putchar(n);
-
-				putchar(m);
-
-				if (n != 56 || m != 57)
-
-				{
-
-					putchar(',');
-
-					putchar(' ');
-
-				}
-
+				putchar(44);
+				putchar(32);
 			}
-
 		}
 
+		i++;
 	}
-
 	putchar('\n');
 
-	return (0);
+	return 0;
 
 }
