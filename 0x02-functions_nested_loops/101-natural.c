@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long int s;
-	int i;
+	int n;
 
 	s = 0;
 	for (n = 0; n < 1024; n++)
