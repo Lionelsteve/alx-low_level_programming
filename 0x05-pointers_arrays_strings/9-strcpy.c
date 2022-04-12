@@ -20,5 +20,5 @@ char *_strcpy(char *dest, char *src)
 			src[i] = dest[j];
 		}
 	}
-	return (*dest);
+	return (dest);
 }
