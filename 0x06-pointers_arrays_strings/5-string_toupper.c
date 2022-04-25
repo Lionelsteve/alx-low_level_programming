@@ -18,5 +18,5 @@ char *string_toupper(char *str)
 			str[i] -= def;
 		}
 	}
-	return (str);
+        return (str);
 }	
