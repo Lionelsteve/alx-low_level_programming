@@ -9,27 +9,15 @@
  * more than 0 if s1 is greather than s2
  */
 int _strcmp(char *s1, char *s2)
-{
-	int i, count1, count2;
-
-	count1 = 1;
-	count2 = 1;
-
-	for (i = 0; s1[i] != '\0'; i++)
+{	
+	while (*s1 == *s2)
 	{
-		count1++;
+		if (*s1 == '\0')
+		{
+			return (0);
+		}
+		s1++;
+		s2++;
 	}
-	for (j = 0; s2[i] != '\0'; j++)
-	{
-		count2++;
-	}
-	if ( count1 == count2)
-	{
-		result = 0;
-	}
-	else if (count1 < count2 || count1 > count2)
-	{
-		result = count1 - count2;
-	}
-	return (result);
-}
+	return (*s1 - *s2);
+}	
