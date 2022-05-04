@@ -3,13 +3,11 @@
 
 /**
  * *_strstr - locates a substring
- * @needle: substring to find
  * @haystack: string to search in
- * The terminating null bytes \0 are
- * not compared
+ * @needle: substring to look for
  *
- * Return: a pointer to the beginning of the located substring,
- * or NULL if the substring is not found.
+ * Return: pointer to the beginning of the located substring
+ * or NULL if the substring is not found
  */
 char *_strstr(char *haystack, char *needle)
 {
