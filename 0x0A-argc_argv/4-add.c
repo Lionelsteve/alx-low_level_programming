@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, j, sum;
 
 	if (argc == 1)
 	{
@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	for (i = 0; argv[i] != '\0'; i++)
+	for (j = 0; argv[j] != '\0'; j++)
 	{
-		sum += atoi(argv[i]);
+		sum += atoi(argv[j]);
 	}
 	printf("%d", sum);
 	return (0);
