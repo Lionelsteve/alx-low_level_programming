@@ -14,19 +14,17 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	unsigned int i, len1, len2, n, m;
+	unsigned int i, len1, len2;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	n = 0;
 	len1 = 0;
-	while (s1[n])
+	while (s1[len1])
 		len1++;
-	m = 0;
 	len2 = 0;
-	while (s2[m])
+	while (s2[len2])
 		len2++;
 	s = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (s == NULL)
