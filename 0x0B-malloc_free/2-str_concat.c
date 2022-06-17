@@ -7,13 +7,15 @@
  * if NULL is passed, treat it as an empty string
  *
  * Return: NULL (Failure),
- * A pointer to a newly allocated space in memory which contains the contents of s1
+ * A pointer to a newly allocated space in memory
+ * which contains the contents of s1
  * followed by the contents of s2
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int i, len1, len2, n, m;
+	unsigned int i, len1, len2, n, m;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
